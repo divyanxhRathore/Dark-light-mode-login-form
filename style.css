@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@300&display=swap');
+
+/* Declare the variables for light and dark mode */
+
+html[data-theme="light"]{
+    --bg: #dff9fb;
+    --headings: #2c3e50;
+    --containercolor: #fff;
+    --primary-shadow: -4px -4px 12px rgba(255, 255, 255, 0.5), 4px 4px 12px rgba(0, 0, 0, 0.1);
+    --btnColor: #7ed6df;
+    
+}
+
+html[data-theme="dark"]{
+    --bg: #222;
+    --headings: #eee;
+    --containercolor: #30336b;
+    --primary-shadow: -4px -4px 12px rgba(255, 255, 255, 0.05), 4px 4px 12px rgba(0, 0, 0, 0.5);
+    --btnColor: #ff416c;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Mulish', sans-serif;
+}
+
+body{
+    min-height: 100vh;
+    background-color: var(--bg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.wrapper{
+    padding: 30px;
+    border-radius: 20px;
+    background-color: var(--containercolor);
+    display: flex;
+    flex-direction: column;
+}
+
+.wrapper h2{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+    color: var(--headings);
+}
+
+.wrapper p{
+    font-weight: 300;
+    margin-top: 10px;
+    color: var(--headings);
+}
+
+.wrapper input{
+    padding-left: 10px;
+    height: 40px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: none;
+    outline: none;
+    box-shadow: var(--primary-shadow);
+    background-color: var(--bg);
+    border-radius: 10px;
+    color: var(--headings);
+}
+
+.wrapper button{
+    margin-bottom: 10px;
+    margin-top: 10px;
+    border-radius: 20px;
+    background-color: var(--btnColor);
+    outline: none;
+    border: none;
+    box-shadow: var(--primary-shadow);
+    height: 40px;
+    font-size: 20px;
+    color: var(--headings);
+}
+
+.wrapper a{
+    text-decoration: none;
+    color: var(--headings);
+    margin-top: 9px;
+}
+
+.wrapper .toggle-btn label{
+    color: var(--headings);
+    cursor: pointer;
+}
+
+.wrapper .toggle-btn input{
+    display: none;
+}
+
+
+
+
+
+
+
+
